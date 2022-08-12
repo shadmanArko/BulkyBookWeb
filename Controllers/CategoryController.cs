@@ -28,7 +28,7 @@ namespace BulkyBookWeb.Controllers
 
         //post
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken] 
         public IActionResult Create(Category obj)
         {
             if (obj.Name == obj.DisplayOrder.ToString())
